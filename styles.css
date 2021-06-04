@@ -1,0 +1,1065 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: ProximaNova, Arial, Sans-serif;
+  color: #757575;
+  background-color: #f5f5f5;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9em;
+  /* position: relative; */
+}
+#header > nav {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+.user-nav {
+  display: flex;
+  align-items: center;
+  background-color: #212121;
+  height: 40px;
+  text-transform: uppercase;
+}
+.user-nav a:hover {
+  color: white;
+}
+/* .user-nav > .store-side > .retail-parent:hover .retail-child {
+    left: 33.5%;
+} */
+#dropdown-icon {
+  display: inline-block;
+  height: 0.8em;
+  width: 0.8em;
+  position: relative;
+  top: 0.1em;
+}
+/* .retail-child {
+    position: absolute;
+    top: 40px;
+    left: 33%;
+    background-color: #f5f5f5;
+    height: 10em;
+    width: 12em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+} */
+/* #retail-parent:hover #retail-child {
+    left: 33.5%;
+} */
+/* #store-side:last-child:hover #retail-child{
+    left: 33.5%;
+} */
+/* .retail-child > a {
+    color: #080a10;
+    text-decoration: none;
+}
+.user-nav > .retail-child > a:hover {
+    color: black;
+} */
+.cart-icon {
+  display: inline-block;
+  width: 1.3em;
+  position: relative;
+  top: 0.1em;
+}
+.store-side {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  font-size: 0.9em;
+}
+.signup-side {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  font-size: 0.9em;
+}
+.store-side > span {
+  color: #504f4f;
+}
+.signup-side > span {
+  color: #504f4f;
+}
+.store-side > *,
+.signup-side > * {
+  padding: 8px;
+  /* margin: 0 0.1em; */
+  text-decoration: none;
+  color: #b0b0b0;
+}
+/* #menu-icon {
+    display: none;
+} */
+/* @media (max-width:1000px) {
+    .store-side, .signup-side {
+        display: none;
+    }
+    .menu-side {
+        height: 100vh;
+        width: 20vw;
+        margin-top: 100vh;
+        box-sizing: border-box;
+        background-color: #212121;
+        z-index: 2;
+        display: flex;
+    }
+    #menu-icon {
+        display: inline-block;
+        position: fixed;
+        top: 0.8em;
+        left: 1em;
+        width: 1em;
+        height: 1em;
+    }
+} */
+.website-nav {
+  height: 88px;
+  display: grid;
+  margin-top: 3em;
+  grid-template-columns: 15% 1fr 27%;
+}
+.website-nav > * {
+  background-color: #fff;
+}
+#div-logo {
+  /* width: 15vw; */
+  /* background-color: #504f4f; */
+  display: flex;
+  justify-content: flex-end;
+}
+#div-list {
+  /* background-color: #504f4f; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#div-list > a {
+  color: #616161;
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: 600;
+  /* margin: 0 25px; */
+}
+#div-search {
+  display: flex;
+  align-items: center;
+}
+#form-search {
+  /* background-color: black; */
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#form-search > input[type="text"] {
+  font-size: 1em;
+  padding: 5px;
+  /* font-size: 17px; */
+  border: none;
+  border-bottom: 1px solid grey;
+  float: left;
+  width: 80%;
+  /* background: #f1f1f1; */
+}
+#form-search > button {
+  color: #757575;
+  border: none;
+  background-color: transparent;
+  font-size: 1em;
+  /* position: fixed;
+  left: 200px; */
+}
+#header-img {
+  width: 64px;
+  margin: 12px;
+  align-self: flex-end;
+}
+.page-nav {
+  height: 60px;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+}
+.page-nav > div {
+  width: 50%;
+}
+#div-list2 {
+  display: flex;
+  align-items: center;
+}
+#div-list2 > a:not(:last-child) {
+  text-decoration: none;
+  padding: 10px;
+  color: #333;
+  /* text-align: center; */
+}
+#heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-weight: 400;
+  color: #333;
+}
+#div-list2 button {
+  background-color: #ff6700;
+  color: #fff;
+  height: 28px;
+  width: auto;
+  border: solid 1px #ff6700;
+  padding: 0 12px;
+  margin-left: 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+#div-price > img {
+  width: 100%;
+}
+#div-price > #text-content {
+  position: absolute;
+  top: 50%;
+  left: 20vw;
+  width: 20%;
+  line-height: 1.5;
+  text-align: justify;
+}
+#div-price > #text-content > img {
+  width: 20vw;
+}
+#div-price > #text-content > p {
+  margin-bottom: 2em;
+}
+#div-price > #text-content > h2 {
+  font-size: 3.2em;
+  font-weight: 400;
+  color: #313131;
+}
+#div-price > #text-content > div {
+  padding-top: 1em;
+  font-size: 1.2em;
+}
+#div-price > #text-content > div > #price {
+  font-size: 1.8em;
+}
+#div-price > #text-content > * {
+  color: #313131;
+}
+#feature {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  padding: 1em;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+}
+#feature > #feature-items {
+  max-width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1em;
+  background-color: #f5f5f5;
+}
+#feature > #feature-items > div {
+  width: 16rem;
+  /* height: 5em; */
+  margin: 1em 2em;
+  display: flex;
+  flex: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+#feature > #feature-items > div > img {
+  height: 6em;
+  margin: 0 1em;
+}
+#camera-details > img {
+  width: 100%;
+  margin-top: -45vh;
+}
+#camera-details > #content {
+  position: relative;
+  left: 10vw;
+  top: 17vh;
+  width: 35%;
+  /* background-color: #504f4f; */
+  display: flex;
+  /* text-align: center; */
+  flex-direction: column;
+}
+#camera-details > #content > div > hr {
+  width: 10%;
+  color: #313131;
+  border: none;
+  border-top: solid 1px #504f4f;
+}
+#camera-details > #content > div > h3 {
+  color: black;
+}
+#camera-details > #content > div {
+  margin: 0.7em;
+}
+#camera-details > #content > div > * {
+  margin: 0.7em;
+  font-size: 1.3em;
+}
+/* #camera-details {
+    
+} */
+#flagship {
+  height: 100vh;
+  background: url(sources/parachute-blue.jpg) no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-top: -1em;
+  text-align: center;
+}
+#flagship > #content > img {
+  width: 80vw;
+}
+#flagship > #content > h3 {
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  padding-bottom: 1em;
+}
+#android-one > img {
+  width: 100%;
+}
+#android-one {
+  position: relative;
+}
+#android-one > #android-one-info {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#android-one > #android-one-info > img {
+  width: 35%;
+  margin-bottom: 1em;
+}
+#android-one > #android-one-info > h3 {
+  color: black;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 1em 0;
+}
+/* #android-one > #android-one-images {
+    position: absolute;
+    bottom: 10%;
+} */
+#android-one > #android-one-images > img {
+  width: 18%;
+  position: absolute;
+  bottom: 8%;
+  left: 20%;
+  opacity: 0;
+}
+#android-one > #android-one-images > .photos {
+  animation: photos cubic-bezier(0.1, 1, 0.1, 1) 20s infinite;
+}
+@keyframes photos {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  50%,
+  75% {
+    opacity: 0;
+  }
+}
+#android-one > #android-one-images > .lens {
+  animation: lens cubic-bezier(0.1, 1, 0.1, 1) 20s infinite;
+}
+@keyframes lens {
+  25% {
+    opacity: 1;
+  }
+  0%,
+  50%,
+  75%,
+  100% {
+    opacity: 0;
+  }
+}
+#android-one > #android-one-images > .assistant {
+  animation: assistant cubic-bezier(0.1, 1, 0.1, 1) 20s infinite;
+}
+@keyframes assistant {
+  50% {
+    opacity: 1;
+  }
+  25%,
+  0%,
+  75%,
+  100% {
+    opacity: 0;
+  }
+}
+#android-one > #android-one-images > .wellbeing {
+  animation: wellbeing cubic-bezier(0.1, 1, 0.1, 1) 20s infinite;
+}
+@keyframes wellbeing {
+  75% {
+    opacity: 1;
+  }
+  25%,
+  50%,
+  0%,
+  100% {
+    opacity: 0;
+  }
+}
+#android-one > #android-one-details {
+  position: absolute;
+  bottom: 18%;
+  left: 45%;
+  color: #f5f5f5;
+  height: 20%;
+  font-size: 1.3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#android-one > #android-one-details > p {
+  border-left: solid 1px white;
+  padding-left: 2em;
+}
+#android-one > #android-one-title {
+  position: absolute;
+  bottom: 2%;
+  left: 10%;
+  width: 80%;
+  color: #fff;
+  font-size: 1.3em;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+#android-one > #android-one-title > p {
+  cursor: pointer;
+}
+#android-one > #android-one-details > .photos {
+  animation: photos-text cubic-bezier(0.1, 1, 0.1, 1) 20s infinite;
+}
+#android-one > #android-one-details > .lens {
+  animation: lens-text cubic-bezier(0.1, 1, 0.1, 1) 20s infinite;
+}
+#android-one > #android-one-details > .assistant {
+  animation: assistant-text cubic-bezier(0.1, 1, 0.1, 1) 20s infinite;
+}
+#android-one > #android-one-details > .wellbeing {
+  animation: wellbeing-text cubic-bezier(0.1, 1, 0.1, 1) 20s infinite;
+}
+@keyframes photos-text {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  50%,
+  75% {
+    opacity: 0.2;
+  }
+}
+@keyframes lens-text {
+  25% {
+    opacity: 1;
+  }
+  0%,
+  50%,
+  75%,
+  100% {
+    opacity: 0.2;
+  }
+}
+@keyframes assistant-text {
+  50% {
+    opacity: 1;
+  }
+  25%,
+  0%,
+  75%,
+  100% {
+    opacity: 0.2;
+  }
+}
+@keyframes wellbeing-text {
+  75% {
+    opacity: 1;
+  }
+  25%,
+  50%,
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+}
+#android-one > #android-one-title > .photos {
+  animation: photos-title cubic-bezier(0.1, 1, 0.1, 1) 20s infinite;
+}
+#android-one > #android-one-title > .lens {
+  animation: lens-title cubic-bezier(0.1, 1, 0.1, 1) 20s infinite;
+}
+#android-one > #android-one-title > .assistant {
+  animation: assistant-title cubic-bezier(0.1, 1, 0.1, 1) 20s infinite;
+}
+#android-one > #android-one-title > .wellbeing {
+  animation: wellbeing-title cubic-bezier(0.1, 1, 0.1, 1) 20s infinite;
+}
+@keyframes photos-title {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  50%,
+  75% {
+    opacity: 0.2;
+  }
+}
+@keyframes lens-title {
+  25% {
+    opacity: 1;
+  }
+  0%,
+  50%,
+  75%,
+  100% {
+    opacity: 0.2;
+  }
+}
+@keyframes assistant-title {
+  50% {
+    opacity: 1;
+  }
+  25%,
+  0%,
+  75%,
+  100% {
+    opacity: 0.2;
+  }
+}
+@keyframes wellbeing-title {
+  75% {
+    opacity: 1;
+  }
+  25%,
+  50%,
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+}
+#ergonomics {
+  background: url(sources/ergonomics.jpg);
+  background-size: 100% 100%;
+  height: 80vh;
+  width: 100%;
+}
+#ergonomics > * {
+  width: 30%;
+  color: #fff;
+  margin: -4px 0 2em 20%;
+  transform: scale(1.1);
+}
+#ergonomics > h3 {
+  font-size: 1.8em;
+  font-weight: 400;
+  padding-top: 6em;
+}
+#amoled-display {
+  text-align: center;
+  /* height: 30vh; */
+  padding-top: 2em;
+}
+#amoled-display > video {
+  display: inline-block;
+  width: 70%;
+  margin: 2em 0;
+  border-radius: 1.2em;
+}
+#amoled-display > h3 {
+  font-size: 2em;
+  color: #212121;
+  font-weight: 400;
+  padding-bottom: 0.2em;
+}
+#snapdragon {
+  background-color: #080a10;
+  padding: 5em;
+  /* position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 15.5em;
+    padding-top: 1em;
+    text-align: end; */
+  /* background-blend-mode: darken; */
+}
+#snapdragon > *:not(:last-child) {
+  text-align: right;
+  color: #f5f5f5;
+  line-height: 1.5;
+}
+#snapdragon > h3 {
+  font-size: 2em;
+}
+#snapdragon > #blue-text {
+  color: #5cc6bd;
+}
+#snapdragon > img {
+  width: 70%;
+  border-radius: 2em;
+  /* background-color: black;
+    
+    background-blend-mode: darken; */
+}
+#battery-capacity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+#battery-capacity > #text-content {
+  position: absolute;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #f5f5f5;
+  margin: 1.8rem;
+}
+#battery-capacity > img {
+  width: 100%;
+}
+#battery-capacity h3 {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+#battery-capacity #medium {
+  font-size: 0.8em;
+  font-weight: 200;
+  margin: 1rem 0;
+  opacity: 0.87;
+}
+#battery-capacity #small {
+  font-size: 0.6em;
+  opacity: 0.7;
+}
+#battery-capacity > #text-content2 {
+  position: absolute;
+  bottom: 2em;
+  left: 30%;
+  font-size: 0.6em;
+  color: #fff;
+}
+.other-features {
+  max-width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  text-align: center;
+  /* padding: 2em; */
+}
+.other-features > div {
+  margin: 3em;
+  max-width: 20%;
+  font-size: 0.8em;
+  color: #212121;
+}
+.other-features img {
+  width: 5em;
+}
+.other-features p {
+  margin-top: 1em;
+}
+#footer {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 1em;
+}
+#footer > div {
+  width: 50%;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+#footer > div > * {
+  margin: 0.2em;
+}
+#icons > a > i {
+  margin: 1em;
+  color: #7c7a7a;
+}
+.form-field > #form > [type="email"] {
+  padding: 0.6em;
+  width: 70%;
+}
+.form-field > #form > [type="submit"] {
+  padding: 0.2em;
+  margin-top: 0.2em;
+  cursor: pointer;
+  font-weight: 600;
+  color: #313131;
+  border-radius: 0.2em;
+  border-color: #616161;
+  /* border: none; */
+  background-color: #dfdddd;
+}
+.form-field > #text {
+  font-size: 0.8em;
+}
+*:focus {
+  outline: none;
+}
+@media (min-width: 1001px) {
+  #mobile-view {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  #for-flex,
+  #android-one,
+  #ergonomics,
+  #amoled-display,
+  #snapdragon,
+  #battery-capacity,
+  .other-features,
+  #footer {
+    display: none;
+  }
+}
+#mobile-view > #header {
+  width: 100%;
+  height: 9vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 12;
+}
+#mobile-view > #header > img {
+  transform: scale(0.5);
+}
+#mobile-view > #main {
+  overflow: hidden; /*Comment this if you want to use js animation*/
+  background-color: #f1efef;
+}
+#mobile-view > #main > .images {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  /* overflow: hidden; */
+  animation: 12s ease-in-out slides infinite; /*Comment this if you want to use js animation*/
+}
+/* This is mobile view image slides animation */
+@keyframes slides {
+  /*Comment this if you want to use js animation*/
+  0% {
+    transform: translateX(0);
+  }
+  19% {
+    transform: translateX(0);
+  }
+  38% {
+    transform: translateX(-100%);
+  }
+  56% {
+    transform: translateX(-100%);
+  }
+  73% {
+    transform: translateX(-200%);
+  }
+  92% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.mobile-images {
+  width: 100vw; /*Comment this if you want to use js animation*/
+  /* display: none;*/ /*This line is useless, 'caz we did this in js for loop*/
+  width: 100%; /*Uncomment this if you want to use js animation*/
+}
+@media (min-width: 800px) {
+  .images > .mobile-images {
+    margin: 0 2em;
+  }
+}
+@media (min-width: 900px) {
+  .images > .mobile-images {
+    margin: 0 3.5em;
+  }
+}
+.price-container > .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price-container > .title > * {
+  margin: 0 1em;
+}
+.price-container > .title > h2 {
+  font-weight: lighter;
+  color: #000;
+}
+.price-container > .title > i {
+  transform: scale(1.5);
+}
+.price-container > .price {
+  /* background-color: #b0b0b0; */
+  padding: 0 1em;
+  margin: 0.2em 0;
+  color: #d4d1d1;
+  font-size: 1.1em;
+}
+.orange {
+  color: #ff6700;
+}
+.big {
+  font-size: 1.8em;
+  margin: 1em 0.2em;
+  font-weight: 500;
+}
+#main > .details {
+  width: 93%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0.5em;
+  /* background-color: #b0b0b0; */
+}
+#main > .details > * {
+  /* width: 100%; */
+  border-radius: 0.6em;
+  padding: 0.5em;
+  background-color: white;
+  margin: 0.3em 0;
+  font-size: 0.9em;
+}
+.details > .features > .underlined {
+  text-decoration: underline;
+}
+.details > .features > * {
+  margin: 0.5em;
+}
+.details > .specs {
+  display: flex;
+  flex-direction: column;
+}
+.details > .specs > * {
+  margin: 0.2em;
+}
+.details > .specs > .storage {
+  display: flex;
+  justify-content: center;
+}
+.details > .specs > .storage > * {
+  margin: 0.5em 1em;
+}
+.details > .specs > .color {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.details > .specs > .color > * {
+  margin: 0.5em 1em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.details > .specs > .color {
+  /* width: 1em; */
+  display: flex;
+  flex-wrap: wrap;
+}
+.color .color-icon {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  margin: 0 0.2em;
+  /* background-color: #080a10; */
+}
+.icon-delivery::before {
+    content: "\e61a";
+}
+.icon-delivery {
+    color: #ff6700;
+    font-size: .875rem;
+    margin-right: .3125rem;
+}
+.delivery > div > img {
+    width: 1.5em;
+    height: 1.5em;
+}
+.delivery {
+    display: flex;
+    flex-direction: column;
+}
+.delivery > div {
+    display: flex;
+}
+.delivery * {
+    margin: 0.5em;
+}
+.delivery > div a {
+    text-decoration: none;
+    color: #757575;
+}
+.details > .ratings {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.details > .ratings > * {
+    margin: 0.5em;
+}
+.ratings > strong {
+    font-size: 1.5em;
+    color: #ff6700;
+    /* margin-top: 5em; */
+}
+.ratings > .count {
+    position: absolute;
+    right: 1em;
+    margin-top: 1em;
+}
+.ratings > .count > a {
+    text-decoration: none;
+    color: #757575;
+}
+.ratings > .stars::before {
+    content: "★★★★★";
+    letter-spacing: 3px;
+    background-clip: text;
+    font-size: 2em;
+    font-family: Times;
+    background: linear-gradient(90deg, #ff6700 calc(4.9*100%/5), #fff calc(4.9*100%/5));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* text-fill-color: transparent; */
+}
+/* Refer the below css code and js code for how to make star ratings dynamic  */
+/* :root {
+    --rating: 4.5;
+    --star-size: 60px;
+    --star-color: #fff;
+    --star-background: #fc0;
+  }
+  
+  .Stars {
+    --percent: calc(var(--rating) / 5 * 100%);
+    
+    display: inline-block;
+    font-size: var(--star-size);
+    font-family: Times; make sure ★ appears correctly
+    line-height: 1;
+    
+    
+  }
+  .Stars::before {
+    content: '★★★★★';
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, #fc0 calc(4.5*100%/5), #fff calc(4.5*100%/5));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+   Just to make a preview more beautifull
+  
+  body {
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  * {
+    position: relative;
+    box-sizing: border-box;
+  } */
+  #main > .more {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1em;
+  }
+  #main > .more > a {
+    color: #ff6700;
+  }
+  #main > .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff;
+      box-sizing: border-box;
+  }
+  #main > .nav > * {
+      margin: 1em 0.5em;
+      font-size: 100%;
+      box-sizing: border-box;
+  }
+  #main > .nav a {
+      text-decoration: none;
+      color: #7c7a7a;
+  }
+  footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      justify-content: space-around;
+      background-color: #fff;
+  }
+  footer > a {
+     width: 10%;
+     /* margin: 1em; */
+  }
+  footer > a > img {
+      width: 100%;
+  }
+  footer > .buy-btn {
+     width: 85%;
+     height: 8vh;
+     border-radius: 0.3em;
+     border-color: #ff6700;
+     background-color: #ff6700;
+     font-size: 120%;
+     color: #fff;
+     font-weight: 600;
+     cursor: pointer;
+  }
